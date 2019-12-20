@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <h1>The Changed Header</h1>
+        <h1 id="custom_template_headline">The Changed Header</h1>
         <h2>Another Headline</h2>
     </header>
     <div>
@@ -21,5 +21,13 @@
         <p>Footer content</p>
         <p>Further footer content</p>
     </footer>
+
+    <script type="text/javascript">
+        let document;
+        document.getElementById("custom_template_headline")
+            .addEventListener("click", function () {
+                console.log('meep meep');
+            });
+    </script>
 </body>
 </html>
