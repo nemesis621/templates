@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Document</title>
+    <?php phpinfo(); ?>
+</head>
+<body>
+    <header>
+        <h1 id="custom_template_headline">The Changed Headline</h1>
+        <h2>Another Headline</h2>
+    </header>
+    <footer>
+        <p>Footer content</p>
+        <p>Further footer content</p>
+    </footer>
+
+    <script type="text/javascript">
+        document.getElementById("custom_template_headline")
+            .addEventListener("click", function () {
+                console.log('meep meep');
+            });
+    </script>
+</body>
+</html>
